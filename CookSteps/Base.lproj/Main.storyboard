@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="afr-c8-G6c">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Riwayat-->
+        <scene sceneID="Ldu-I2-fNc">
+            <objects>
+                <navigationController id="sUU-54-Eg3" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Riwayat" image="arrow.counterclockwise" catalog="system" id="njO-UD-wXO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="oH5-vX-DhK">
+                        <rect key="frame" x="0.0" y="44" width="390" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="YIh-Lj-Gh3" kind="relationship" relationship="rootViewController" id="ghm-KR-Ll0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yNR-PQ-A9g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-149" y="277"/>
+        </scene>
+        <!--Disukai-->
+        <scene sceneID="glq-d0-X90">
+            <objects>
+                <navigationController id="4Gn-M1-j4P" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Disukai" image="heart.fill" catalog="system" id="yla-IR-CVY"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="dWj-HB-uNh">
+                        <rect key="frame" x="0.0" y="44" width="390" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="AGu-UN-SRg" kind="relationship" relationship="rootViewController" id="WNy-BK-WTv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="41H-gg-lQ1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-149" y="1012"/>
+        </scene>
+        <!--Cari-->
+        <scene sceneID="alL-3u-sGG">
+            <objects>
+                <navigationController id="JBU-Gr-P4L" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Cari" image="magnifyingglass" catalog="system" id="Tcf-v1-GNb"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="21j-uN-M3p">
+                        <rect key="frame" x="0.0" y="44" width="390" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="kVa-4Y-FZN" kind="relationship" relationship="rootViewController" id="pPU-R8-ozh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WzZ-Hj-lYd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-149" y="1767"/>
+        </scene>
+        <!--Riwayat-->
+        <scene sceneID="UqN-jM-oyl">
+            <objects>
+                <viewController id="YIh-Lj-Gh3" customClass="RiwayatViewController" customModule="CookSteps" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="w4X-GF-jIV">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="k0p-nd-ONz">
+                                <rect key="frame" x="0.0" y="140" width="390" height="621"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cFj-vR-VfK"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstItem="k0p-nd-ONz" firstAttribute="trailing" secondItem="cFj-vR-VfK" secondAttribute="trailing" id="N4e-sV-cqL"/>
+                            <constraint firstItem="k0p-nd-ONz" firstAttribute="top" secondItem="w4X-GF-jIV" secondAttribute="top" constant="140" id="O7g-bZ-Nlu"/>
+                            <constraint firstItem="k0p-nd-ONz" firstAttribute="leading" secondItem="cFj-vR-VfK" secondAttribute="leading" id="gjy-fo-JeG"/>
+                            <constraint firstItem="k0p-nd-ONz" firstAttribute="bottom" secondItem="cFj-vR-VfK" secondAttribute="bottom" id="jyw-GQ-vMN"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Riwayat" image="arrow.counterclockwise" catalog="system" id="4Og-jM-PlB"/>
+                    <navigationItem key="navigationItem" title="Riwayat" id="aPX-bH-RDc"/>
+                    <connections>
+                        <outlet property="tableView" destination="k0p-nd-ONz" id="lgo-NV-UFx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bHw-uD-Mvz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="902" y="277"/>
+        </scene>
+        <!--CookSteps-->
+        <scene sceneID="Obb-yc-UBN">
+            <objects>
+                <viewController id="nk4-lh-QT0" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KcG-9S-rvk">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pilihan Teratas" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yhj-mD-kUc">
+                                <rect key="frame" x="16" y="102" width="163" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hgj-1g-R4e"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="CookSteps" id="5Hn-dS-7Ce">
+                        <barButtonItem key="backBarButtonItem" title="Resep" id="8BY-L2-cXb"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="apN-3L-zR1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="902" y="-439"/>
+        </scene>
+        <!--Disukai-->
+        <scene sceneID="KRg-4i-Ldl">
+            <objects>
+                <viewController id="AGu-UN-SRg" customClass="DisukaiViewController" customModule="CookSteps" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bhI-di-DqS">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="2PQ-wG-qST">
+                                <rect key="frame" x="0.0" y="140" width="390" height="621"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="udj-Ty-fSR"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstItem="2PQ-wG-qST" firstAttribute="trailing" secondItem="udj-Ty-fSR" secondAttribute="trailing" id="1Wd-fv-kRr"/>
+                            <constraint firstItem="2PQ-wG-qST" firstAttribute="bottom" secondItem="udj-Ty-fSR" secondAttribute="bottom" id="28t-uQ-ky1"/>
+                            <constraint firstItem="2PQ-wG-qST" firstAttribute="leading" secondItem="udj-Ty-fSR" secondAttribute="leading" id="dGb-Cz-Xca"/>
+                            <constraint firstItem="2PQ-wG-qST" firstAttribute="top" secondItem="udj-Ty-fSR" secondAttribute="top" id="zNc-23-36g"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Disukai" image="heart.fill" catalog="system" id="iZP-OV-zQb"/>
+                    <navigationItem key="navigationItem" title="Disukai" id="YZc-aE-N8J"/>
+                    <connections>
+                        <outlet property="tableView" destination="2PQ-wG-qST" id="GdP-aI-Axc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vJ3-0k-2hf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="902" y="1012"/>
+        </scene>
+        <!--Cari-->
+        <scene sceneID="oAw-9j-GNv">
+            <objects>
+                <viewController id="kVa-4Y-FZN" customClass="CariViewController" customModule="CookSteps" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uoU-cN-7YO">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="eZS-Vg-56W">
+                                <rect key="frame" x="0.0" y="140" width="390" height="621"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="MA3-5q-Lic"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstItem="MA3-5q-Lic" firstAttribute="trailing" secondItem="eZS-Vg-56W" secondAttribute="trailing" id="QKZ-e6-EPl"/>
+                            <constraint firstItem="MA3-5q-Lic" firstAttribute="bottom" secondItem="eZS-Vg-56W" secondAttribute="bottom" id="Qbd-Xc-KKh"/>
+                            <constraint firstItem="eZS-Vg-56W" firstAttribute="leading" secondItem="MA3-5q-Lic" secondAttribute="leading" id="tnF-H0-r0x"/>
+                            <constraint firstItem="eZS-Vg-56W" firstAttribute="top" secondItem="MA3-5q-Lic" secondAttribute="top" id="ybV-Mm-vcj"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Cari" image="magnifyingglass" catalog="system" id="g6W-FT-H4G"/>
+                    <navigationItem key="navigationItem" title="Cari" id="WpF-X4-6NU"/>
+                    <connections>
+                        <outlet property="tableView" destination="eZS-Vg-56W" id="37u-bI-emt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4nv-9E-ebh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="902" y="1767"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="6mG-Jg-PQC">
+            <objects>
+                <tabBarController id="afr-c8-G6c" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Zl1-qf-trW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="c3y-Tv-Igk" kind="relationship" relationship="viewControllers" id="MwX-9p-Jpe"/>
+                        <segue destination="sUU-54-Eg3" kind="relationship" relationship="viewControllers" id="HJh-O3-GRN"/>
+                        <segue destination="4Gn-M1-j4P" kind="relationship" relationship="viewControllers" id="t1P-DU-yQ6"/>
+                        <segue destination="JBU-Gr-P4L" kind="relationship" relationship="viewControllers" id="c0O-gN-XM9"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FOa-lK-OMw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1258" y="700"/>
+        </scene>
+        <!--Test-->
+        <scene sceneID="WZE-kj-BSU">
+            <objects>
+                <navigationController title="Test" automaticallyAdjustsScrollViewInsets="NO" id="c3y-Tv-Igk" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Resep" image="list.bullet.rectangle.portrait.fill" catalog="system" id="744-Z8-iKf"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lhj-Ex-1fP">
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="nk4-lh-QT0" kind="relationship" relationship="rootViewController" id="XKc-C4-Lpt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rQJ-mB-Pc0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-148" y="-438"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.counterclockwise" catalog="system" width="115" height="128"/>
+        <image name="heart.fill" catalog="system" width="128" height="109"/>
+        <image name="list.bullet.rectangle.portrait.fill" catalog="system" width="115" height="128"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
