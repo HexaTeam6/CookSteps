@@ -21,6 +21,11 @@
 		38F1CEF327FD43CB00D558B3 /* Resep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F1CEF227FD43CB00D558B3 /* Resep.swift */; };
 		38F1CEF527FD4BD100D558B3 /* DisukaiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F1CEF427FD4BD100D558B3 /* DisukaiViewController.swift */; };
 		38F1CEF727FD7FC900D558B3 /* CariViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F1CEF627FD7FC900D558B3 /* CariViewController.swift */; };
+		38F1CEFA27FE378B00D558B3 /* ResepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F1CEF927FE378B00D558B3 /* ResepViewController.swift */; };
+		38F1CEFD27FE3B3200D558B3 /* RecomendedResepCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F1CEFB27FE3B3200D558B3 /* RecomendedResepCollectionViewCell.swift */; };
+		38F1CEFE27FE3B3200D558B3 /* RecomendedResepCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38F1CEFC27FE3B3200D558B3 /* RecomendedResepCollectionViewCell.xib */; };
+		38F1CF0327FE4F5E00D558B3 /* CategoryViewCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F1CF0127FE4F5E00D558B3 /* CategoryViewCollectionViewCell.swift */; };
+		38F1CF0427FE4F5E00D558B3 /* CategoryViewCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 38F1CF0227FE4F5E00D558B3 /* CategoryViewCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +64,11 @@
 		38F1CEF227FD43CB00D558B3 /* Resep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resep.swift; sourceTree = "<group>"; };
 		38F1CEF427FD4BD100D558B3 /* DisukaiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisukaiViewController.swift; sourceTree = "<group>"; };
 		38F1CEF627FD7FC900D558B3 /* CariViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CariViewController.swift; sourceTree = "<group>"; };
+		38F1CEF927FE378B00D558B3 /* ResepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResepViewController.swift; sourceTree = "<group>"; };
+		38F1CEFB27FE3B3200D558B3 /* RecomendedResepCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecomendedResepCollectionViewCell.swift; sourceTree = "<group>"; };
+		38F1CEFC27FE3B3200D558B3 /* RecomendedResepCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecomendedResepCollectionViewCell.xib; sourceTree = "<group>"; };
+		38F1CF0127FE4F5E00D558B3 /* CategoryViewCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewCollectionViewCell.swift; sourceTree = "<group>"; };
+		38F1CF0227FE4F5E00D558B3 /* CategoryViewCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryViewCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,7 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				38F1CEF127FD43AB00D558B3 /* Models */,
-				38F1CEF027FD266400D558B3 /* Storyboards */,
+				38F1CEF027FD266400D558B3 /* Nibs */,
 				38F1CEEF27FD264B00D558B3 /* Views */,
 				38F1CEEE27FD262200D558B3 /* Controllers */,
 				38C80DD027FBEF1A00285FF6 /* AppDelegate.swift */,
@@ -146,6 +156,7 @@
 				38F1CEE827FD099D00D558B3 /* RiwayatViewController.swift */,
 				38F1CEF427FD4BD100D558B3 /* DisukaiViewController.swift */,
 				38F1CEF627FD7FC900D558B3 /* CariViewController.swift */,
+				38F1CEF927FE378B00D558B3 /* ResepViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -154,16 +165,20 @@
 			isa = PBXGroup;
 			children = (
 				38F1CEEA27FD0FEF00D558B3 /* ListResepTableViewCell.swift */,
+				38F1CEFB27FE3B3200D558B3 /* RecomendedResepCollectionViewCell.swift */,
+				38F1CF0127FE4F5E00D558B3 /* CategoryViewCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		38F1CEF027FD266400D558B3 /* Storyboards */ = {
+		38F1CEF027FD266400D558B3 /* Nibs */ = {
 			isa = PBXGroup;
 			children = (
 				38F1CEEB27FD0FEF00D558B3 /* ListResepTableViewCell.xib */,
+				38F1CEFC27FE3B3200D558B3 /* RecomendedResepCollectionViewCell.xib */,
+				38F1CF0227FE4F5E00D558B3 /* CategoryViewCollectionViewCell.xib */,
 			);
-			path = Storyboards;
+			path = Nibs;
 			sourceTree = "<group>";
 		};
 		38F1CEF127FD43AB00D558B3 /* Models */ = {
@@ -279,7 +294,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				38C80DDD27FBEF1B00285FF6 /* LaunchScreen.storyboard in Resources */,
+				38F1CEFE27FE3B3200D558B3 /* RecomendedResepCollectionViewCell.xib in Resources */,
 				38F1CEED27FD0FEF00D558B3 /* ListResepTableViewCell.xib in Resources */,
+				38F1CF0427FE4F5E00D558B3 /* CategoryViewCollectionViewCell.xib in Resources */,
 				38C80DDA27FBEF1B00285FF6 /* Assets.xcassets in Resources */,
 				38C80DD827FBEF1A00285FF6 /* Main.storyboard in Resources */,
 			);
@@ -308,9 +325,12 @@
 			files = (
 				38C80DD127FBEF1A00285FF6 /* AppDelegate.swift in Sources */,
 				38F1CEEC27FD0FEF00D558B3 /* ListResepTableViewCell.swift in Sources */,
+				38F1CEFA27FE378B00D558B3 /* ResepViewController.swift in Sources */,
 				38F1CEE927FD099D00D558B3 /* RiwayatViewController.swift in Sources */,
 				38C80DD327FBEF1A00285FF6 /* SceneDelegate.swift in Sources */,
+				38F1CF0327FE4F5E00D558B3 /* CategoryViewCollectionViewCell.swift in Sources */,
 				38F1CEF327FD43CB00D558B3 /* Resep.swift in Sources */,
+				38F1CEFD27FE3B3200D558B3 /* RecomendedResepCollectionViewCell.swift in Sources */,
 				38F1CEF727FD7FC900D558B3 /* CariViewController.swift in Sources */,
 				38F1CEF527FD4BD100D558B3 /* DisukaiViewController.swift in Sources */,
 			);

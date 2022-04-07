@@ -9,10 +9,10 @@ import UIKit
 
 class ListResepTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var judulResep: UILabel!
-    @IBOutlet weak var deskripsiResep: UILabel!
-    @IBOutlet weak var fotoResep: UIImageView!
-    @IBOutlet weak var container: UIView!
+    @IBOutlet var judulResep: UILabel!
+    @IBOutlet var deskripsiResep: UILabel!
+    @IBOutlet var fotoResep: UIImageView!
+    @IBOutlet var container: UIView!
 
     override func awakeFromNib() {
         super.awakeFromNib()

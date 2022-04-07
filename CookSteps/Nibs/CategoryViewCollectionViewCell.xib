@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CategoryViewCollectionViewCell" customModule="CookSteps" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="60" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="60" height="80"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="160-st-Xuk">
+                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="bFv-Wy-JwS"/>
+                            <constraint firstAttribute="height" constant="60" id="rFF-w4-dhu"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sederhana" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gIb-fO-Wrx">
+                        <rect key="frame" x="0.0" y="62" width="60" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="gIb-fO-Wrx" firstAttribute="top" secondItem="160-st-Xuk" secondAttribute="bottom" constant="2" id="54f-Br-fwp"/>
+                <constraint firstAttribute="bottom" secondItem="160-st-Xuk" secondAttribute="bottom" constant="20" id="Sfa-Tk-d8C"/>
+                <constraint firstItem="gIb-fO-Wrx" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="VJT-3E-a2Y"/>
+                <constraint firstAttribute="trailing" secondItem="160-st-Xuk" secondAttribute="trailing" id="Vy5-j4-gng"/>
+                <constraint firstAttribute="trailing" secondItem="gIb-fO-Wrx" secondAttribute="trailing" id="aqW-wr-Dxf"/>
+                <constraint firstItem="160-st-Xuk" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="d6t-ca-lp1"/>
+                <constraint firstItem="160-st-Xuk" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="zfq-B4-II0"/>
+            </constraints>
+            <size key="customSize" width="156" height="139"/>
+            <connections>
+                <outlet property="container" destination="160-st-Xuk" id="vkW-w6-Mgn"/>
+                <outlet property="namaKatergori" destination="gIb-fO-Wrx" id="QO9-8T-okl"/>
+            </connections>
+            <point key="canvasLocation" x="335.38461538461536" y="100.23696682464454"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
