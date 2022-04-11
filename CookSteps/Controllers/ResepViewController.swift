@@ -64,6 +64,8 @@ class ResepViewController: UIViewController, UICollectionViewDelegate, UICollect
             cell.judulResep?.text = resep.judulResep
             cell.fotoResep?.backgroundColor = .gray
             
+            cell.buttonMasak.addTarget(self, action: #selector(masakButtonTapped), for: .touchUpInside)
+            
             cell.fotoResep?.layer.cornerRadius = 8
             cell.background?.backgroundColor = .clear
             cell.buttonMasak?.layer.cornerRadius = 0
@@ -79,5 +81,13 @@ class ResepViewController: UIViewController, UICollectionViewDelegate, UICollect
             
             return cell
         }
+    }
+    
+    // MARK: - Action
+    @IBAction func masakButtonTapped() -> Void {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let detailResepVC = storyBoard.instantiateViewController(withIdentifier: "DetailResep") as! DetailResepViewController
+        detailResepVC.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(detailResepVC, animated: true)
     }
 }

@@ -1,19 +1,16 @@
 //
-//  ListResepTableViewCell.swift
+//  HeaderDetailResepTableViewCell.swift
 //  CookSteps
 //
-//  Created by Abdur Rachman Wahed on 06/04/22.
+//  Created by Abdur Rachman Wahed on 10/04/22.
 //
 
 import UIKit
 
-class ListResepTableViewCell: UITableViewCell {
+class HeaderDetailResepTableViewCell: UITableViewCell {
     
-    @IBOutlet var judulResep: UILabel!
-    @IBOutlet var deskripsiResep: UILabel!
-    @IBOutlet var fotoResep: UIImageView!
-    @IBOutlet var container: UIView!
-    @IBOutlet var buttonBuat: UIButton!
+    @IBOutlet var headerLabel: UILabel!
+    @IBOutlet var collapseButton: UIButton!
 
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -90,6 +90,8 @@ class RiwayatViewController: UIViewController, UITableViewDelegate, UITableViewD
         cell.deskripsiResep?.text = resep.judulResep
         cell.fotoResep?.backgroundColor = .gray
         
+        cell.buttonBuat.addTarget(self, action: #selector(buatButtonTapped), for: .touchUpInside)
+        
         cell.fotoResep?.layer.cornerRadius = 8
         cell.container?.layer.cornerRadius = 8
         
@@ -100,4 +102,11 @@ class RiwayatViewController: UIViewController, UITableViewDelegate, UITableViewD
         return 91
     }
 
+    // MARK: - Action
+    @IBAction func buatButtonTapped() -> Void {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let detailResepVC = storyBoard.instantiateViewController(withIdentifier: "DetailResep") as! DetailResepViewController
+        detailResepVC.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(detailResepVC, animated: true)
+    }
 }

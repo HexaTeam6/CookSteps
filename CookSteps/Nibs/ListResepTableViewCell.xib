@@ -78,6 +78,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <color key="backgroundColor" systemColor="systemGray6Color"/>
             <connections>
+                <outlet property="buttonBuat" destination="dpl-zk-ZAE" id="Lle-ab-4E9"/>
                 <outlet property="container" destination="iXJ-VO-QgM" id="r6B-Vp-M94"/>
                 <outlet property="deskripsiResep" destination="jBH-g9-PHC" id="gdJ-Un-mWO"/>
                 <outlet property="fotoResep" destination="09h-eW-Zpb" id="lF1-x1-LW7"/>

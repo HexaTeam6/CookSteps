@@ -25,6 +25,14 @@
                             <constraint firstAttribute="width" constant="356" id="tJo-Az-fsm"/>
                         </constraints>
                     </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RIh-Eg-bT0">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="242"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="390" id="Wla-m7-5cQ"/>
+                            <constraint firstAttribute="height" constant="242" id="uAq-o7-oxf"/>
+                        </constraints>
+                    </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gkR-J5-q7i">
                         <rect key="frame" x="17" y="177" width="356" height="65"/>
                         <subviews>
@@ -54,14 +62,6 @@
                             <constraint firstAttribute="bottom" secondItem="93G-0D-WB8" secondAttribute="bottom" constant="22" id="Txt-f0-nOy"/>
                             <constraint firstItem="93G-0D-WB8" firstAttribute="top" secondItem="gkR-J5-q7i" secondAttribute="top" constant="21" id="use-MS-5WU"/>
                             <constraint firstAttribute="width" constant="356" id="wwR-Zc-Txc"/>
-                        </constraints>
-                    </view>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RIh-Eg-bT0">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="242"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="390" id="Wla-m7-5cQ"/>
-                            <constraint firstAttribute="height" constant="242" id="uAq-o7-oxf"/>
                         </constraints>
                     </view>
                 </subviews>
