@@ -15,6 +15,8 @@ class InstructSixteenViewController: UIViewController {
     @IBOutlet weak var hasilContainer: UIView!
     @IBOutlet weak var videoContainer: UIView!
     
+    var player: AVPlayer = AVPlayer()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -30,10 +32,16 @@ class InstructSixteenViewController: UIViewController {
         initVideoPlayer(path: "adukDanCampur", type: "MOV")
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        player.pause()
+    }
+    
     func initVideoPlayer(path: String, type: String) {
         let resPath = Bundle.main.path(forResource: path, ofType: type)!
         let url = URL(fileURLWithPath: resPath)
-        let player = AVPlayer(url: url)
+        player = AVPlayer(url: url)
         let layer = AVPlayerLayer(player: player)
         
         player.rate = 1
