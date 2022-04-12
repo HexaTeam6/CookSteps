@@ -28,8 +28,12 @@ class InstructOneViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        let path = Bundle.main.path(forResource: "adukDanCampur", ofType: "MOV")!
-        let url = URL(fileURLWithPath: path)
+        initVideoPlayer(path: "memasakAir", type: "MOV")
+    }
+    
+    func initVideoPlayer(path: String, type: String) {
+        let resPath = Bundle.main.path(forResource: path, ofType: type)!
+        let url = URL(fileURLWithPath: resPath)
         let player = AVPlayer(url: url)
         let layer = AVPlayerLayer(player: player)
         
@@ -45,7 +49,6 @@ class InstructOneViewController: UIViewController {
         addChild(playerViewController)
         view.addSubview(playerViewController.view)
         playerViewController.videoGravity = .resizeAspectFill
-        playerViewController.didMove(toParent: self)
     }
 
 }
