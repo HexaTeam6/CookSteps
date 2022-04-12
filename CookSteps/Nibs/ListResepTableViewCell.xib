@@ -21,13 +21,19 @@
                         <rect key="frame" x="17" y="5" width="356" height="81"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nasi Goreng" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dos-du-5dp">
-                                <rect key="frame" x="84" y="18" width="92" height="19.5"/>
+                                <rect key="frame" x="84" y="18" width="164" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="164" id="RUy-2i-c4K"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nasi, krupuk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jBH-g9-PHC">
-                                <rect key="frame" x="84" y="40" width="69" height="15"/>
+                                <rect key="frame" x="84" y="40.5" width="164" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="164" id="3Q1-jH-J0n"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>

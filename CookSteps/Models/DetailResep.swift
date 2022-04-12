@@ -29,24 +29,40 @@ class DetailResep {
 extension DetailResep {
     static var sampleData = [
         DetailResep(section: "Alat", options: [
-            Options(optionName:"Penggorengan", optionDesc: "wajib"),
-            Options(optionName:"Pisau", optionDesc: "opsional"),
-            Options(optionName:"Spatula", optionDesc: "wajib")
+            Options(optionName:"Pisau", optionDesc: "wajib"),
+            Options(optionName:"Telenan", optionDesc: "opsional"),
+            Options(optionName:"Wajan", optionDesc: "wajib"),
+            Options(optionName:"Panci", optionDesc: "wajib"),
+            Options(optionName:"Spatula", optionDesc: "wajib"),
+            Options(optionName:"Sendok", optionDesc: "opsional"),
+            Options(optionName:"Garpu", optionDesc: "opsional"),
         ]),
         DetailResep(section: "Bahan", options: [
-            Options(optionName:"Paha Ayam", optionDesc: "1 potong"),
-            Options(optionName:"Telur", optionDesc: "2 butir"),
-            Options(optionName:"Udang tanpa kulit", optionDesc: "150 gram"),
-            Options(optionName:"Bakso sapi", optionDesc: "5 buah"),
-            Options(optionName:"Bakso ikan", optionDesc: "5 buah"),
-            Options(optionName:"Nasi putih", optionDesc: "500 gram")
+            Options(optionName:"Air", optionDesc: "600ml"),
+            Options(optionName:"Bawang merah", optionDesc: "5 biji"),
+            Options(optionName:"Bawang putih", optionDesc: "2 biji"),
+            Options(optionName:"Kaldu jamur", optionDesc: "1/2 sendok makan"),
+            Options(optionName:"Lada", optionDesc: "1/2 sendok makan"),
+            Options(optionName:"Telur", optionDesc: "1 buah"),
+            Options(optionName:"Garam", optionDesc: "1/4 sendok makan"),
+            Options(optionName:"Minyak wijen", optionDesc: "2 sendok makan"),
         ]),
         DetailResep(section: "Cara memasak", options: [
-            Options(optionName:"Memanaskan minyak", optionDesc: "2 menit", isInstruction: true),
-            Options(optionName:"Tumis bumbu", optionDesc: "5 menit", isInstruction: true),
-            Options(optionName:"Memasak telur", optionDesc: "5 menit", isInstruction: true),
-            Options(optionName:"Memasak ayam, udang, dan bakso", optionDesc: "10 menit", isInstruction: true),
-            Options(optionName:"Memasak nasi", optionDesc: "20 menit", isInstruction: true)
+            Options(optionName:"Masak air", optionDesc: "5 menit", isInstruction: true),
+            Options(optionName:"Potong bawang", optionDesc: "1 menit", isInstruction: true),
+            Options(optionName:"Masak mie", optionDesc: "10 menit", isInstruction: true),
+            Options(optionName:"Iris bakso", optionDesc: "1 menit", isInstruction: true),
+            Options(optionName:"Panaskan minyak", optionDesc: "30 detik", isInstruction: true),
+            Options(optionName:"Goreng telur", optionDesc: "5 menit", isInstruction: true),
+            Options(optionName:"Masukkan bawang", optionDesc: "-", isInstruction: true),
+            Options(optionName:"Masukkan bakso", optionDesc: "-", isInstruction: true),
+            Options(optionName:"Masukkan kecap", optionDesc: "-", isInstruction: true),
+            Options(optionName:"Masukkan kaldu jamur", optionDesc: "-", isInstruction: true),
+            Options(optionName:"Masukkan lada", optionDesc: "-", isInstruction: true),
+            Options(optionName:"Masukkan telur", optionDesc: "-", isInstruction: true),
+            Options(optionName:"Masukkan garam", optionDesc: "-", isInstruction: true),
+            Options(optionName:"Masukkan minyak wijen", optionDesc: "-", isInstruction: true),
+            Options(optionName:"Campur dan aduk rata", optionDesc: "10 menit", isInstruction: true),
         ])
     ]
 }

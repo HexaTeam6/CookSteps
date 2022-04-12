@@ -87,7 +87,7 @@ class CariViewController: UIViewController, UITableViewDelegate, UITableViewData
         else { resep = listResep[indexPath.row] }
         
         cell.judulResep?.text = resep.judulResep
-        cell.deskripsiResep?.text = resep.judulResep
+        cell.deskripsiResep?.text = resep.bahan.joined(separator: ", ")
         cell.fotoResep?.backgroundColor = .gray
         
         cell.buttonBuat.addTarget(self, action: #selector(buatButtonTapped), for: .touchUpInside)
