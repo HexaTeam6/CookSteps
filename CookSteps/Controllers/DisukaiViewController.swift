@@ -86,6 +86,7 @@ class DisukaiViewController: UIViewController, UITableViewDelegate, UITableViewD
         
         cell.judulResep?.text = resep.judulResep
         cell.deskripsiResep?.text = resep.bahan.joined(separator: ", ")
+        cell.fotoResep.image = UIImage(named: resep.gambar)
         cell.fotoResep?.backgroundColor = .gray
         
         cell.buttonBuat.addTarget(self, action: #selector(buatButtonTapped), for: .touchUpInside)

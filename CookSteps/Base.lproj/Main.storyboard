@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="afr-c8-G6c">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Sx1-PN-SZk">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -106,7 +106,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JlP-lM-JoD">
                                         <rect key="frame" x="0.0" y="0.0" width="390" height="876"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="y7a-0H-dIb">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mie.goreng.bakso" translatesAutoresizingMaskIntoConstraints="NO" id="y7a-0H-dIb">
                                                 <rect key="frame" x="0.0" y="0.0" width="390" height="374"/>
                                                 <color key="backgroundColor" systemColor="systemGrayColor"/>
                                                 <constraints>
@@ -447,7 +447,7 @@
         <!--Memasak Air-->
         <scene sceneID="hLI-gX-TPF">
             <objects>
-                <viewController id="Sx1-PN-SZk" sceneMemberID="viewController">
+                <viewController id="Sx1-PN-SZk" customClass="InstructOneViewController" customModule="CookSteps" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ir1-nI-2eI">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="1072"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -458,7 +458,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WGd-Jm-gCy">
                                         <rect key="frame" x="0.0" y="0.0" width="390" height="876"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DLv-Lf-YK3">
+                                            <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="DLv-Lf-YK3">
                                                 <rect key="frame" x="0.0" y="0.0" width="390" height="324"/>
                                                 <color key="backgroundColor" systemColor="systemCyanColor"/>
                                                 <constraints>
@@ -749,6 +749,13 @@
                     </view>
                     <navigationItem key="navigationItem" title="Memasak Air" id="BBx-iX-Tzy"/>
                     <size key="freeformSize" width="390" height="1072"/>
+                    <connections>
+                        <outlet property="caraMemasakContainer" destination="y8X-ys-RzM" id="XpP-xr-9Xu"/>
+                        <outlet property="detailInstruksiContainer" destination="ctI-PK-qmq" id="sUW-QA-bg3"/>
+                        <outlet property="hasilContainer" destination="NO5-gf-Oqo" id="uVh-br-RkS"/>
+                        <outlet property="pengingatContainer" destination="xk0-yW-egt" id="Pri-jr-PBK"/>
+                        <outlet property="videoContainer" destination="DLv-Lf-YK3" id="lcV-xf-5BK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="awg-pb-YQ4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -982,7 +989,7 @@
         <!--Campur dan aduk rata-->
         <scene sceneID="f8w-ba-B9y">
             <objects>
-                <viewController id="jb9-nC-9Bc" sceneMemberID="viewController">
+                <viewController id="jb9-nC-9Bc" customClass="InstructSixteenViewController" customModule="CookSteps" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aSX-TN-1kO">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="1072"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1307,15 +1314,22 @@
                     </view>
                     <navigationItem key="navigationItem" title="Campur dan aduk rata" id="WxL-sE-Q6l"/>
                     <size key="freeformSize" width="390" height="1072"/>
+                    <connections>
+                        <outlet property="caraMemasakContainer" destination="ze4-mU-jVA" id="lgn-dE-6K0"/>
+                        <outlet property="detailInstruksiContainer" destination="e8f-m6-RyC" id="Wdy-SH-Bcf"/>
+                        <outlet property="hasilContainer" destination="gGh-K6-Bx1" id="zie-mX-jnF"/>
+                        <outlet property="pengingatContainer" destination="EIh-8r-JeP" id="ICm-eK-c34"/>
+                        <outlet property="videoContainer" destination="czO-w9-7qc" id="40V-LO-5eR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MhR-Vq-5m6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3529" y="699"/>
+            <point key="canvasLocation" x="3527.6923076923076" y="698.8151658767772"/>
         </scene>
-        <!--View Controller-->
+        <!--Done View Controller-->
         <scene sceneID="ZYW-kn-TWg">
             <objects>
-                <viewController id="MOV-aR-9DW" sceneMemberID="viewController">
+                <viewController id="MOV-aR-9DW" customClass="DoneViewController" customModule="CookSteps" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DPh-wy-MKh">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1479,10 +1493,45 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="2zN-kt-NAL"/>
+                    <connections>
+                        <outlet property="quoteLabel" destination="gew-x5-qlV" id="mm5-wy-bj3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="t5V-He-6jH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4320" y="699.52606635071083"/>
+        </scene>
+        <!--Video View Controller-->
+        <scene sceneID="KxQ-2O-beV">
+            <objects>
+                <viewController id="7Eh-Sf-a33" customClass="VideoViewController" customModule="CookSteps" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eFA-GN-DhI">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kwf-LG-v1g">
+                                <rect key="frame" x="0.0" y="44" width="390" height="433"/>
+                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="433" id="WGY-pU-cSS"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Sl5-0N-4EW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Kwf-LG-v1g" firstAttribute="trailing" secondItem="Sl5-0N-4EW" secondAttribute="trailing" id="iaK-ok-yPF"/>
+                            <constraint firstItem="Kwf-LG-v1g" firstAttribute="top" secondItem="Sl5-0N-4EW" secondAttribute="top" id="mt4-vB-z3i"/>
+                            <constraint firstItem="Kwf-LG-v1g" firstAttribute="leading" secondItem="Sl5-0N-4EW" secondAttribute="leading" id="wqS-pK-JUy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentView" destination="Kwf-LG-v1g" id="Lg8-q9-6Kc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q7N-5h-8pC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5287.6923076923076" y="729.38388625592415"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
@@ -1501,6 +1550,7 @@
         <image name="heart.fill" catalog="system" width="128" height="109"/>
         <image name="list.bullet.rectangle.portrait.fill" catalog="system" width="115" height="128"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="mie.goreng.bakso" width="1196" height="862"/>
         <image name="person.2.fill" catalog="system" width="128" height="80"/>
         <image name="timer" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">

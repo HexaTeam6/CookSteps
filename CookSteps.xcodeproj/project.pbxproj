@@ -13,6 +13,11 @@
 		3870F28E28028CBF0075DF48 /* HeaderDetailResepTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3870F28C28028CBF0075DF48 /* HeaderDetailResepTableViewCell.swift */; };
 		3870F28F28028CBF0075DF48 /* HeaderDetailResepTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3870F28D28028CBF0075DF48 /* HeaderDetailResepTableViewCell.xib */; };
 		3870F291280299B30075DF48 /* DetailResep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3870F290280299B30075DF48 /* DetailResep.swift */; };
+		3870F33D28053B580075DF48 /* InstructOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3870F33B28053B580075DF48 /* InstructOneViewController.swift */; };
+		3870F33E28053B580075DF48 /* InstructSixteenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3870F33C28053B580075DF48 /* InstructSixteenViewController.swift */; };
+		3870F34028053DD20075DF48 /* DoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3870F33F28053DD20075DF48 /* DoneViewController.swift */; };
+		3870F342280554CC0075DF48 /* adukDanCampur.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 3870F341280554CC0075DF48 /* adukDanCampur.MOV */; };
+		3870F344280555650075DF48 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3870F343280555650075DF48 /* VideoViewController.swift */; };
 		38C80DD127FBEF1A00285FF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C80DD027FBEF1A00285FF6 /* AppDelegate.swift */; };
 		38C80DD327FBEF1A00285FF6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C80DD227FBEF1A00285FF6 /* SceneDelegate.swift */; };
 		38C80DD827FBEF1A00285FF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38C80DD627FBEF1A00285FF6 /* Main.storyboard */; };
@@ -58,6 +63,11 @@
 		3870F28C28028CBF0075DF48 /* HeaderDetailResepTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderDetailResepTableViewCell.swift; sourceTree = "<group>"; };
 		3870F28D28028CBF0075DF48 /* HeaderDetailResepTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderDetailResepTableViewCell.xib; sourceTree = "<group>"; };
 		3870F290280299B30075DF48 /* DetailResep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailResep.swift; sourceTree = "<group>"; };
+		3870F33B28053B580075DF48 /* InstructOneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructOneViewController.swift; sourceTree = "<group>"; };
+		3870F33C28053B580075DF48 /* InstructSixteenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructSixteenViewController.swift; sourceTree = "<group>"; };
+		3870F33F28053DD20075DF48 /* DoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoneViewController.swift; sourceTree = "<group>"; };
+		3870F341280554CC0075DF48 /* adukDanCampur.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = adukDanCampur.MOV; sourceTree = "<group>"; };
+		3870F343280555650075DF48 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		38C80DCD27FBEF1A00285FF6 /* CookSteps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookSteps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38C80DD027FBEF1A00285FF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		38C80DD227FBEF1A00285FF6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -131,6 +141,7 @@
 		38C80DCF27FBEF1A00285FF6 /* CookSteps */ = {
 			isa = PBXGroup;
 			children = (
+				3870F341280554CC0075DF48 /* adukDanCampur.MOV */,
 				38F1CEF127FD43AB00D558B3 /* Models */,
 				38F1CEF027FD266400D558B3 /* Nibs */,
 				38F1CEEF27FD264B00D558B3 /* Views */,
@@ -165,11 +176,15 @@
 		38F1CEEE27FD262200D558B3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3870F33B28053B580075DF48 /* InstructOneViewController.swift */,
+				3870F33C28053B580075DF48 /* InstructSixteenViewController.swift */,
+				3870F33F28053DD20075DF48 /* DoneViewController.swift */,
 				38F1CEE827FD099D00D558B3 /* RiwayatViewController.swift */,
 				38F1CEF427FD4BD100D558B3 /* DisukaiViewController.swift */,
 				38F1CEF627FD7FC900D558B3 /* CariViewController.swift */,
 				38F1CEF927FE378B00D558B3 /* ResepViewController.swift */,
 				3869B15B27FFDDA5002152E9 /* DetailResepViewController.swift */,
+				3870F343280555650075DF48 /* VideoViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -314,6 +329,7 @@
 				38C80DDD27FBEF1B00285FF6 /* LaunchScreen.storyboard in Resources */,
 				38F1CEFE27FE3B3200D558B3 /* RecomendedResepCollectionViewCell.xib in Resources */,
 				38F1CEED27FD0FEF00D558B3 /* ListResepTableViewCell.xib in Resources */,
+				3870F342280554CC0075DF48 /* adukDanCampur.MOV in Resources */,
 				38F1CF0427FE4F5E00D558B3 /* CategoryViewCollectionViewCell.xib in Resources */,
 				38C80DDA27FBEF1B00285FF6 /* Assets.xcassets in Resources */,
 				3870F28F28028CBF0075DF48 /* HeaderDetailResepTableViewCell.xib in Resources */,
@@ -344,6 +360,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3869B15C27FFDDA5002152E9 /* DetailResepViewController.swift in Sources */,
+				3870F33E28053B580075DF48 /* InstructSixteenViewController.swift in Sources */,
+				3870F344280555650075DF48 /* VideoViewController.swift in Sources */,
 				3870F28E28028CBF0075DF48 /* HeaderDetailResepTableViewCell.swift in Sources */,
 				38C80DD127FBEF1A00285FF6 /* AppDelegate.swift in Sources */,
 				38F1CEEC27FD0FEF00D558B3 /* ListResepTableViewCell.swift in Sources */,
@@ -354,9 +372,11 @@
 				38F1CEF327FD43CB00D558B3 /* Resep.swift in Sources */,
 				38F1CEFD27FE3B3200D558B3 /* RecomendedResepCollectionViewCell.swift in Sources */,
 				3870F291280299B30075DF48 /* DetailResep.swift in Sources */,
+				3870F33D28053B580075DF48 /* InstructOneViewController.swift in Sources */,
 				38F1CEF727FD7FC900D558B3 /* CariViewController.swift in Sources */,
 				384098A6280141B800B35D30 /* DetailResepTableViewCell.swift in Sources */,
 				38F1CEF527FD4BD100D558B3 /* DisukaiViewController.swift in Sources */,
+				3870F34028053DD20075DF48 /* DoneViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
